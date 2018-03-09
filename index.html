@@ -22,11 +22,10 @@
         </nav>
       </header>
 
-      <!-- Заголовок для доступности h1 -->
-      <h1 class="visually-hidden">Седона - город в Аризоне</h1>
-
       <!-- раздел Main -->
       <main>
+        <!-- Заголовок для доступности h1 -->
+        <h1 class="visually-hidden">Седона - город в Аризоне</h1>
 
         <!--Раздел приветственной фотокарточки  -->
         <section class="intro">
@@ -82,17 +81,17 @@
 
           <!-- Блок с 3-5 преимуществами -->
           <div class="features-row">
-            <div class="feature-col">
+            <div class="feature">
               <h3 class="feature-title">Небольшая площадь</h3>
               <div class="feature-number">№3</div>
               <p class="feature-description">Все достопримечательности находятся очень близко</p>
             </div>
-            <div class="feature-col">
+            <div class="feature">
               <h3 class="feature-title">Красивая дорога</h3>
               <div class="feature-number">№4</div>
               <p class="feature-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </div>
-            <div class="feature-col">
+            <div class="feature">
               <h3 class="feature-title">Мало туристов</h3>
               <div class="feature-number">№5</div>
               <p class="feature-description">Большинство едет в Гранд Каньон и толпится там</p>
@@ -108,26 +107,59 @@
         </div>
 
         <!-- Будущая форма -->
+        <div class="booking-wrapper">
+					<form class="form-booking" action="/echo" method="GET">
+
+						<div class="input-line">
+							<label for="il1">Дата заезда: <span class="icon-calendar"></span></label>
+							<input class="booking-calendar" name="checkin" type="text" placeholder="24 апреля 2014" id="il1">
+						</div>
+
+						<div class="input-line">
+							<label for="il2">Дата выезда: <span class="icon-calendar"></span></label>
+							<input class="booking-calendar" name="checkout" type="text" placeholder="4 июля 2014" id="il2">
+						</div>
+
+						<div class="input-line">
+							<div class="input-line-adults">
+								<label for="il3">Взрослые:</label>
+								<div class="booking-calendar-minus-plus">
+									<button class="btn-grey icon-minus" type="button"></button>
+									<input class="booking-calendar-select" name="adults" type="text" value="2" id="il3">
+									<button class="btn-grey icon-plus" type="button"></button>
+								</div>
+							</div>
+
+							<label for="il4">Дети:</label>
+							<div class="booking-calendar-minus-plus">
+								<button class="btn-grey icon-minus" type="button"></button>
+								<input class="booking-calendar-select" name="children" type="text" value="0" id="il4">
+								<button class="btn-grey icon-plus" type="button"></button>
+							</div>
+					</div>
+          <button class="form-btn-blue btn-blue" type="submit">Найти</button>
+					</form>
+				</div>
 
         <!-- Футер -->
         <section class="map">
           <iframe class="google-map" src="" width="" height=""></iframe>
-
-          <!--Подвал сайта с соц сетями и копирайтом  -->
-          <footer class="main-footer footer-index">
-            <p class="footer-col hashtag">#visitsedona</p>
-            <ul class="footer-col social-bnts">
-              <li class="social-btn"><a href="#" class="social-link social-link-twitter">Twitter</a></li>
-              <li class="social-btn"><a href="#" class="social-link social-link-facebook">Facebook</a></li>
-              <li class="social-btn"><a href="#" class="social-link social-link-youtube">Youtube</a></li>
-            </ul>
-            <div class=" footer-col copyright">
-              <span class="copyright-text">Website by</span>
-              <!-- логотип htmlacadademy в svg/png  -->
-            </div>
-          </footer>
         </section>
       </main>
+
+      <!--Подвал сайта с соц сетями и копирайтом  -->
+      <footer class="main-footer footer-index">
+        <p class="footer-col hashtag">#visitsedona</p>
+        <ul class="footer-col social-bnts">
+          <li class="social-btn"><a href="#" class="social-link social-link-twitter">Twitter</a></li>
+          <li class="social-btn"><a href="#" class="social-link social-link-facebook">Facebook</a></li>
+          <li class="social-btn"><a href="#" class="social-link social-link-youtube">Youtube</a></li>
+        </ul>
+        <div class=" footer-col copyright">
+          <span class="copyright-text">Website by</span>
+          <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="logo-htmlacademy" >
+        </div>
+      </footer>
     </div>
   </body>
 </html>

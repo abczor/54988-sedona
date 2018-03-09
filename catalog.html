@@ -44,6 +44,47 @@
           <button type="submit" name="button">Показать</button>
           </div>
         </form>
+
+        <form action="/echo" method="GET">
+        	<div class="filters-col">
+        	  <div class="filters-title">Инфраструктура:</div>
+        	    <div class="filter-checkbox">
+                <input type="checkbox" name="infrastructure1" value="i1" id="ch1" checked>
+        				<label for="ch1">Бассейн</label>
+              </div>
+        			<div class="filter-checkbox">
+                <input type="checkbox" name="infrastructure2" value="i2" id="ch2">
+        				<label for="ch2">Парковка</label>
+              </div>
+        			<div class="filter-checkbox">
+                <input type="checkbox" name="infrastructure3" value="i3" id="ch3">
+        				<label for="ch3">Wi-Fi</label></div>
+        			</div>
+
+        			<div class="filters-col">
+        				<div class="filters-title">Тип жилья:</div>
+        					<div class="filter-checkbox">
+                    <input type="checkbox" name="hotel1" value="h1" id="ch4" checked>
+        						<label for="ch4">Гостиница</label>
+                  </div>
+        					<div class="filter-checkbox">
+                    <input type="checkbox" name="hotel2" value="h2" id="ch5" checked>
+        						<label for="ch5">Мотель</label>
+                  </div>
+        					<div class="filter-checkbox">
+                    <input type="checkbox" name="hotel3" value="h3" id="ch6" checked="">
+        						<label for="ch6">Апартаменты</label>
+                  </div>
+        				</div>
+
+        					<div class="filters-col-price">
+        						<!-- Прайс -->
+        					</div>
+
+        						<a href="#" class="btn-transparent">Показать</a>
+        					</div>
+        				</form>
+
       </section>
 
       <!-- Секция с результатами поиска -->
@@ -153,7 +194,7 @@
         <div class="footer-col copyright">
           <span class="copyright-text">Website by</span>
           <a href="#" class="copyright-logo">
-
+            <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="logo-htmlacademy" >
           </a>
         </div>
       </footer>
