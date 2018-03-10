@@ -109,35 +109,34 @@
         <!-- Будущая форма -->
         <div class="booking-wrapper">
 					<form class="form-booking" action="/echo" method="GET">
-
-						<div class="input-line">
-							<label for="il1">Дата заезда: <span class="icon-calendar"></span></label>
+            <div class="input-line">
+							<label for="il1">Дата заезда:</label>
+              <button type="button" class="icon-calendar"></button>
 							<input class="booking-calendar" name="checkin" type="text" placeholder="24 апреля 2014" id="il1">
 						</div>
-
 						<div class="input-line">
-							<label for="il2">Дата выезда: <span class="icon-calendar"></span></label>
+							<label for="il2">Дата выезда:</label>
+              <button type="button" class="icon-calendar"></button>
 							<input class="booking-calendar" name="checkout" type="text" placeholder="4 июля 2014" id="il2">
 						</div>
-
 						<div class="input-line">
 							<div class="input-line-adults">
 								<label for="il3">Взрослые:</label>
 								<div class="booking-calendar-minus-plus">
 									<button class="btn-grey icon-minus" type="button"></button>
-									<input class="booking-calendar-select" name="adults" type="text" value="2" id="il3">
+									<input class="quantity-field" name="adults" type="text" value="2" id="il3">
 									<button class="btn-grey icon-plus" type="button"></button>
 								</div>
 							</div>
-
-							<label for="il4">Дети:</label>
-							<div class="booking-calendar-minus-plus">
-								<button class="btn-grey icon-minus" type="button"></button>
-								<input class="booking-calendar-select" name="children" type="text" value="0" id="il4">
-								<button class="btn-grey icon-plus" type="button"></button>
-							</div>
-					</div>
-          <button class="form-btn-blue btn-blue" type="submit">Найти</button>
+              <div class="input-line-child">
+							  <label for="il4">Дети:</label>
+							  <div class="booking-calendar-minus-plus">
+								  <button class="btn-grey icon-minus" type="button"></button>
+								  <input class="quantity-field" name="children" type="text" value="0" id="il4">
+								  <button class="btn-grey icon-plus" type="button"></button>
+							  </div>
+					    </div>
+            <button class="form-btn-blue btn-blue" type="submit">Найти</button>
 					</form>
 				</div>
 
