@@ -30,7 +30,7 @@
         <!--Раздел приветственной фотокарточки  -->
         <section class="intro">
           <h2 class="visually-hidden">Приветственное фото</h2>
-          <img src="img/background.jpg" width="1200" height="773" alt="visitsedona">
+          <img src="img/logo-image.png" width="458" height="352" alt="visitsedona">
         </section>
 
         <!-- Блок приветственного вступления -->
@@ -104,48 +104,46 @@
         <div class="interest">
           <h3 class="interest-title">Заинтересовались?</h3>
           <p class="interest-descrition">Укажите предполагаемые даты поездки,<br /> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        </div>
-
-        <!-- Будущая форма -->
-        <div class="booking-form">
-          <button type="button" class="button button-brown search-button">Поиск гостиницы в Седоне</button>
-          <form class="form-booking" action="https://echo.htmlacademy.ru" method="post">
-            <div class="input-line">
-              <label for="il1">Дата заезда:</label>
-              <button type="button" class="icon-calendar"></button>
-              <input class="field field-date" name="checkin" type="text" placeholder="24 апреля 2014" id="il1">
-            </div>
-            <div class="input-line">
-              <label for="il2">Дата выезда:</label>
-              <button type="button" class="icon-calendar"></button>
-              <input class="field field-date" name="checkout" type="text" placeholder="4 июля 2014" id="il2">
-            </div>
-            <div class="input-line">
-              <div class="input-line-adults">
-                <label for="il3">Взрослые:</label>
-                <div class="quantity-wrap">
-                  <button class="quantity-btn quantity-btn-minus" type="button">-</button>
-                  <input class="field field-quantity" name="adults" type="text" value="2" id="il3">
-                  <button class="quantity-btn quantity-btn-plus" type="button">+</button>
+          <div class="booking">
+            <button type="button" class="button button-brown search-button">Поиск гостиницы в Седоне</button>
+            <form class="booking-form" action="https://echo.htmlacademy.ru" method="post">
+              <div class="input-line">
+                <label for="il1">Дата заезда:</label>
+                <button type="button" class="icon-calendar"></button>
+                <input class="field field-date" name="checkin" type="text" placeholder="24 апреля 2014" id="il1">
+              </div>
+              <div class="input-line">
+                <label for="il2">Дата выезда:</label>
+                <button type="button" class="icon-calendar"></button>
+                <input class="field field-date" name="checkout" type="text" placeholder="4 июля 2014" id="il2">
+              </div>
+              <div class="input-line">
+                <div class="input-line-adults">
+                  <label for="il3">Взрослые:</label>
+                  <div class="quantity-wrap">
+                    <button class="quantity-btn quantity-btn-minus" type="button">-</button>
+                    <input class="field field-quantity" name="adults" type="text" value="2" id="il3">
+                    <button class="quantity-btn quantity-btn-plus" type="button">+</button>
+                  </div>
+                </div>
+                <div class="input-line-child">
+                  <label for="il4">Дети:</label>
+                  <div class="quantity-wrap">
+                    <button class="quantity-btn quantity-btn-minus" type="button"></button>
+                    <input class="quantity-field" name="children" type="text" value="0" id="il4">
+                    <button class="quantity-btn quantity-btn-plus" type="button"></button>
+                  </div>
                 </div>
               </div>
-              <div class="input-line-child">
-                <label for="il4">Дети:</label>
-                <div class="quantity-wrap">
-                  <button class="quantity-btn quantity-btn-minus" type="button"></button>
-                  <input class="quantity-field" name="children" type="text" value="0" id="il4">
-                  <button class="quantity-btn quantity-btn-plus" type="button"></button>
-                </div>
-              </div>
-            </div>
-            <button class="button booking-button" type="submit">Найти</button>
-          </form>
+              <button class="button booking-button" type="submit">Найти</button>
+            </form>
+          </div>
         </div>
 
-        <!-- Футер!! -->
+
         <section class="map">
           <h2 class="visually-hidden">Карта Седоны</h2>
-          <iframe class="google-map" src="" width="" height=""></iframe>
+          <iframe class="map-canvas" src="" width="" height=""></iframe>
         </section>
       </main>
 
