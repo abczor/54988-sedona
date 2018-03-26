@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #333333;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+  font-weight: 700;
+  background-color: #ffffff;
+}
+
+.site-navigation,
+.footer-col.social-bnts,
+.sort-options,
+.hotels {
+  list-style: none;
+}
+
+.main-navigation a,
+.sort-options a,
+.hotel-description a {
+  color: #000000;
+}
